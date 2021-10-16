@@ -2,6 +2,8 @@ package com.joserelumbra.guessnumber.ui;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.sax.StartElementListener;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,6 +31,7 @@ public class PlayActivity extends AppCompatActivity {
     private EditText edPlay;
     private User user;
     private Bundle bundle;
+    boolean boolBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,4 +157,31 @@ public class PlayActivity extends AppCompatActivity {
         btnTryAgain.setEnabled(false);
     }
     //endregion
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if (btnCheck.isEnabled() == true && btnTryAgain.isEnabled() == false && edPlay.isEnabled() == true){
+            boolBtn = true;
+            outState.putBoolean("Comprobar", boolBtn);
+        }else {
+            boolBtn = false;
+            outState.putBoolean("Comprobar", boolBtn);
+        }
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        if (savedInstanceState.getBoolean("Comprobar") == true){
+            btnCheck.setEnabled(true);
+            btnTryAgain.setEnabled(false);
+            edPlay.setEnabled(true);
+        }else {
+            btnCheck.setEnabled(false);
+            btnTryAgain.setEnabled(true);
+            edPlay.setEnabled(false);
+        }
+    }
 }
