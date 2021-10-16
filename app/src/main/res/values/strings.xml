@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GuessNumber</string>
+    <!--View items from activity_config.xml-->
+    <string name="titleConfig">GuessNumber --> Login</string>
+    <string name="tvUserName">Nombre del jugador: </string>
+    <string name="edUserName">Introduce el nombre aquí: </string>
+    <string name="tvUserIntents">Nº de intentos: </string>
+    <string name="edUserIntents">Introduce el nº de intentos: </string>
+    <string name="btnPlay">Jugar</string>
+    <!--View items from activity_play.xml-->
+    <string name="titlePlay">GuessNumber --> Play</string>
+    <string name="tvPlay">Adivina el número secreto</string>
+    <string name="edPlay">Introduce el número: </string>
+    <string name="tvTryÍntents">Intentos restantes: </string>
+    <string name="tvTotalTry">0</string>
+    <string name="btnCheck">Comprobar</string>
+    <string name="btnTryAgain">Reintentar</string>
+    <!--View items from activity_end_play.xml-->
+    <string name="titleEndPlay">GuessNumber --> Game Over</string>
+    <string name="tvEndUser">Has Ganado, </string>
+    <string name="tvEndGuessNumber">El número secreto es: </string>
+    <string name="tvEndIntents">Intentos restantes: </string>
+    <string name="btnPlayAgain">Volver a jugar</string>
+    <string name="errNotNullValues">Se deben rellenar todos los campos</string>
+    <string name="errOnlyDigit">El nº de intentos debe ser un valor numérico válido</string>
+    <string name="errTooIntents">El campo intentos debe ser un número menor que 100 para poder perder</string>
+    <string name="errGuessMore">El número secreto es mayor</string>
+    <string name="errGuessLess">El número secreto es menor</string>
+</resources>

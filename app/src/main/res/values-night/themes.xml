@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GuessNumber" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#470909</item>
+        <item name="colorPrimaryDark">#6E0609</item>
+        <item name="colorAccent">#712932</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EndPlayActivity"
+    android:label="@string/titleEndPlay">
+
+    <TextView
+        android:id="@+id/tvEndUser"
+        android:layout_width="247dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/tvEndUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvEndGuessNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEndGuessNumber"
+        android:layout_width="169dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/tvEndGuessNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEndUser" />
+
+    <TextView
+        android:id="@+id/tvEndIntents"
+        android:layout_width="246dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvEndIntents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvEndGuessNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvEndGuessNumber" />
+
+</android.support.constraint.ConstraintLayout>
